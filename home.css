@@ -1,0 +1,1597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow-x: hidden;
+
+}
+
+
+.header {
+    background: linear-gradient(rgb(168, 168, 182), #aac7cc);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100px;
+}
+
+ul,
+li {
+
+    display: inline;
+
+}
+
+ul {
+
+    margin-left: 60%;
+
+}
+
+.sear ul li {
+    margin-left: 5px;
+    color: black;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sear ul li a{
+    color: black;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.searc ul {
+    margin-left: 5%;
+}
+
+.searc ul li {
+
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+
+.searc ul li a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+
+}
+.olu li a::after{
+    content: " ";
+    width:0%;
+    height: 2.5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(2, 2, 2);
+    transition: all 0.3s linear;
+}
+
+.olu li a:hover::after{
+   left: 0;
+   width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    width: 350px;
+    height: 45px;
+
+}
+
+.searc h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    display: inline;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+}
+
+.searc h1 span {
+    color: rgb(190, 4, 144);
+}
+
+.search1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    border: #151516 solid 2px;
+    border-radius: 14px;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 14%;
+
+}
+
+.search1 input {
+    background: transparent;
+    border: none;
+    height: 100%;
+    width: 80%;
+    padding: 3px;
+}
+
+.search1 input:focus {
+    outline: none;
+}
+
+.search1 input::placeholder {
+    color: #151516;
+}
+
+
+.hert {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 58px;
+    right: 8%;
+
+
+}
+
+
+.hert img {
+    width: 30px;
+    height: 30px;
+}
+
+.check {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 58px;
+    right: 4%;
+}
+
+.check img {
+    width: 30px;
+    height: 30px;
+}
+
+.sec1 {
+    background: url(./img/pexels-gustavo-fring-4173108.jpg);
+    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.des {
+    width: 450px;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.des span,
+h1,
+p {
+    text-align: center;
+}
+
+.des span {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 135px;
+
+}
+
+.des h1 {
+    color: rgb(128, 40, 123);
+    font-size: 30px;
+    margin: 20px 0px 10px;
+
+}
+
+.des p {
+    color: black;
+    font-size: 18px;
+    font-weight: 450;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.des button {
+
+    background-image: linear-gradient(to right, #314755 0%, #151516 51%, #a3b1bd 100%);
+    padding: 6px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #928762;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.des button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sec5{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: fit-content;
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    gap: 20px 50px;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.sec4{
+    
+        background:grey;
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: fit-content;
+        font-family: "Poppins", sans-serif;
+        width: 100vw;
+        gap: 20px 50px;
+        overflow: hidden;
+        padding-left: 40px;
+    
+   
+}
+.card5{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.card5 img,.card{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card5 span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    font-family:"Poppins", sans-serif;
+}
+.card5 h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 600;
+    font-family:"Lobster", sans-serif;
+}
+
+.card4{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 250px;
+    min-height: 380px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    background: #fcfcfa;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+}
+
+
+.card:hover {
+    box-shadow: 0 0px 10px rgb(75, 80, 87);
+    transition: 0.5s;
+}
+.car:hover{
+    box-shadow: 0 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.card1 {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.card1 span {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+
+}
+
+.card1 h2 {
+    color: #312121;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    text-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+
+}
+
+.card1 p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    flex-grow: 3;
+}
+
+
+.card4 span {
+
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+}
+
+
+
+.card4 h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card4 button {
+    background-image: linear-gradient(to right, #314755 0%, #151516 51%, #a3b1bd 100%);
+    padding: 6px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 7px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+
+}
+
+.card4 button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.card4 img {
+    max-width: 220px;
+    max-height: 220px;
+
+}
+
+
+
+
+.card2 {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+}
+
+.card2 img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    position: absolute;
+    top: 200px;
+    left: -10px;
+}
+.card2 img:hover:last-child{
+    opacity: 1;
+}
+.card2 img:last-child{
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+
+.card2 span {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    color: #000000;
+
+}
+
+.card2 h2 {
+    color: #0aefff;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    text-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+
+}
+
+.car img {
+    max-width: 220px;
+    max-height: 220px;
+
+}
+
+.car{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 260px;
+    min-height: 380px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    background: #c5c5ac;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+}
+
+.car span {
+    
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+}
+
+.car h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.car button {
+    background-image: linear-gradient(to right, #314755 0%, #151516 51%, #a3b1bd 100%);
+    padding: 6px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #0f110e;
+    border-radius: 7px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+}
+
+.car button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+.sec2 {
+    background: #eeeeee;
+    display: flex;
+    padding: 20px; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: fit-content;
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    gap: 20px 50px;
+    overflow: hidden;
+
+}
+
+.card img {
+    max-width: 220px;
+    max-height: 220px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 300px;
+    min-height: 465px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    background: #fcfcfa;
+    border-radius: 15px;
+    align-items: center;
+
+}
+
+.card:hover {
+    box-shadow: 0 0px 10px rgb(75, 80, 87);
+    transition: 0.5s;
+}
+.car:hover{
+    box-shadow: 0 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.card1 {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.card1 span {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+
+}
+
+.card1 h2 {
+    color: #312121;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    text-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+
+}
+
+.card1 p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    flex-grow: 3;
+}
+
+.card span {
+
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+}
+
+.card p {
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    color: #724624;
+}
+
+.card h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card button {
+    background-image: linear-gradient(to right, #314755 0%, #151516 51%, #a3b1bd 100%);
+    padding: 6px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 7px;
+    margin-top: 20px;
+    position: static;
+
+}
+
+.card button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.overlay {
+    background-color: #151516;
+    width: 100%;
+    height: 200%;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: none;
+}
+
+.signin {
+    z-index: 4;
+    width: 28%;
+    height: 500px;
+    background-color: rgb(235, 234, 234);
+
+    top: 10%;
+    left: 35%;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 20px black;
+    position: fixed;
+    display: none;
+}
+
+.signin h3 {
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.signin p {
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.facebook {
+    border: 2px rgb(4, 72, 150) solid;
+    display: flex;
+    width: 45%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.facebook h3 {
+    color: rgb(4, 72, 150);
+    font-weight: 600px;
+    font-size: 15px;
+    display: inline;
+}
+
+.google {
+    border: 2px rgb(202, 27, 27) solid;
+    display: flex;
+    width: 45%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.google h3 {
+    color: rgb(202, 27, 27);
+    font-weight: 600px;
+    font-size: 15px;
+    display: inline;
+}
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.signin h5 {
+    text-align: center;
+    color: #314755;
+    padding: 20px;
+}
+
+.signin label {
+    text-align: left;
+    color: #314755;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.signin input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(48, 65, 24);
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.signin input:focus {
+    outline: none;
+}
+
+.signin input[type="text"]:valid:focus {
+    border-bottom: 1px solid rgb(21, 158, 3);
+
+}
+
+.signin input[type="text"]:not(:valid):focus {
+    border-bottom: 1px solid red;
+    box-shadow: 0 0 5px red;
+    animation: shake 2s linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(-5px)
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+.signin button {
+    background-image: linear-gradient(to right, #314755 0%, #151516 51%, #a3b1bd 100%);
+    padding: 6px;
+    transition: 0.5s;
+    background-size: 300% auto;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0px;
+}
+
+.signin p a {
+    text-decoration: none;
+    color: rgb(51, 108, 134);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#cancel {
+    font-size: 25px;
+    background: transparent;
+    color: black;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    z-index: 3;
+    margin: 0;
+}
+
+.orederlist {
+    width: 285px;
+    background-color: #f0f0e1;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 103px;
+    right: 65px;
+    padding: 10px;
+    border-radius: 10px 0px 10px 10px;
+    display: none;
+
+}
+
+.orederlist h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4b4b44;
+    padding: 10px;
+}
+
+.orederlist li,
+.orederlist span {
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #4b4b44;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.orederlist a {
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fa0505;
+}
+
+.notfound {
+    background: #dfe9fc;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: none;
+
+
+}
+
+.notfound h3 {
+    color: #d11b1b;
+    font-size: 15px;
+    text-shadow: 0 8px 5px rgb(105, 74, 74);
+    animation: shake 2s linear infinite;
+}
+
+.notfound img {
+    width: 300px;
+    height: 300px;
+    animation: shake 2s linear infinite;
+}
+
+.sec1 i {
+    color: #fafafa;
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    text-shadow: 0px 0px 18px rgb(0, 0, 0);
+}
+
+.sec1 i:hover {
+    animation: shake 0.6s linear infinite;
+}
+
+#move1 {
+    transform: translate(100%, 0px);
+}
+
+
+.hii {
+
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        'image image head '
+        'image image paragraph '
+        'image image paragraph '
+        'image image but1 '
+        'image image no';
+
+
+}
+
+
+
+.hii img {
+    grid-area: image;
+    max-width: 650px;
+    max-height: 400px;
+    overflow: hidden;
+
+
+}
+
+.hii h1,
+button,
+p {
+    text-align: center;
+    place-self: center;
+    align-self: center;
+}
+
+
+.hii h1 {
+    grid-area: head;
+    color: #16d8ae;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0px 10px;
+    width: 360px;
+
+}
+
+.hii p {
+    width: 450px;
+    grid-area: paragraph;
+    color: black;
+    font-size: 18px;
+    font-weight: 450;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.hii button {
+    grid-area: but1;
+    width: 95px;
+    height: 30px;
+    background: linear-gradient(to right, rgb(6, 91, 119) 0%, 51%, #2080c0 100%);
+
+    box-shadow: none;
+    border: blue;
+    padding: 6px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 7px;
+    margin-top: 20px;
+    transition: all 1s ease;
+
+
+}
+
+.hii button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@keyframes posit {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+
+footer {
+    width: 100vw;
+    height: 190px;
+    background: rgb(26, 24, 24);
+    padding: 10px;
+    position: relative;
+
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social a i {
+    font-size: 30px;
+    color: #d11b1b;
+    text-shadow: 0 0 10px black;
+}
+
+.terms {
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+.terms a {
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer p {
+    color: #ff0000;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    
+}
+
+.payment {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.sec3 {
+    width: 100vw;
+    height: 130px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec3 h1 {
+    color: #506272;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.sec3 img {
+    width: 100px;
+    height: auto;
+}
+
+.sec3 h1 span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #506272;
+}
+
+.searc .ad {
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    font-size: 20px;
+    display: none;
+    z-index: 4;
+}
+
+.had {
+    transform: translatex(0px);
+}
+
+@keyframes sli {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+ 
+
+/* customer care */
+
+.cuscon{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #fefefe;
+    gap:  15px;
+}
+
+.cuscon h6{
+   font-size: 20px;
+   color: #000000;
+   padding: 20px;
+}
+
+.cuscon p{
+
+    margin-left: 20px;
+    color: black;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.gcus{
+    display: grid;
+    grid-template-areas:
+    "aside center center" 
+    "aside center center"
+    "aside center center"
+    "login login login";
+    gap: 40px;
+    margin-left: 40px;
+    
+}
+
+.gcus1{
+    grid-area: login;
+    background: rgb(128, 124, 124,0.3);
+    height:400px;
+    width: 93vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 3px black;
+}
+
+.gcus1 ul li,.gcus1 ul,.gcus2 ul li,.gcus2 ul{
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+   
+}
+
+.gcus1 ul li,.gcus2 ul li{
+    color: black;
+    font-size: 14px;
+    font-weight: 900px;
+}
+
+.gcus1 ul li a , .gcus2 ul li a{
+    color: #333; /* Dark gray for better readability */
+    font-size: 14px; /* Increased font size */
+    font-weight: 500; /* Slightly lighter weight */
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+.gcus2{
+    grid-area: aside;
+    background: rgb(128, 124, 124,0.3);
+    height: 400px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 3px black;
+
+}
+.gcus3{
+background: rgb(128, 124, 124,0.3);
+   grid-area: center;
+   height: 400px;
+   width: 65vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   box-shadow: 0 0 3px black;
+}
+.gcus3 p{
+    font-size: 25px;
+    color: #000000;
+}
+.gcus3 button{
+    padding: 13px 50px;
+    border-radius: 5px;
+    background-color: orange;
+    border: 1px solid red;
+}
+
+.custodiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .plu{
+    color: red;
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************** Media query  *************************************/
+
+@media (min-width:280px) and (max-width:650px) {
+    html {
+        font-size: 65%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .sec1 {
+        background-size: cover;
+        background-position: cover;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .des {
+        width: 200px;
+        padding: 18px;
+    }
+
+    .des h1 {
+        font-size: 10px;
+    }
+
+    .des i {
+        font-size: 10px;
+        top: 90px;
+    }
+
+    .des p {
+        font-size: 8px;
+    }
+
+    .des span {
+        font-size: 6px;
+        margin-left: 45px;
+
+    }
+
+    .des button {
+        width: 48px;
+        padding: 3px 2px;
+        font-size: 6px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .hii {
+        width: 100vw;
+        font-size: 10px;
+        padding: 10px;
+
+    }
+
+    .hii img {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .hii button {
+        width: auto;
+        padding: 3px 2px;
+        height: auto;
+        font-size: 6px;
+        margin-top: -15px;
+        text-align: center;
+        border-radius: 1px;
+    }
+
+    .hii p {
+        font-size: 8px;
+        width: 180px;
+    }
+
+    .hii h1 {
+        font-size: 10px;
+        width: 130px;
+    }
+
+    .sec2 {
+        font-size: 10px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    #log1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 40%;
+        width: 45%;
+        color: white;
+        display: block;
+        z-index: 4;
+        text-align: center;
+        padding-top: 90px;
+        transform: translatex(200px);
+        transition: all 0.9s ease-in-out;
+    }
+
+    #log1 li {
+        color: white;
+        display: block;
+        z-index: 6;
+        margin-bottom: 10px;
+    }
+    #log1 li a{
+        color: white;
+    }
+
+    .search1 {
+        width: 150px;
+        top: 26px;
+    }
+
+    .hert,
+    .check {
+        display: none;
+    }
+
+    .searc .ad {
+        display: block;
+    }
+
+    .searc ul li a {
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .searc ul li {
+        z-index: 6;
+    }
+
+    .searc ul {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100vh;
+        width: 45%;
+        background-color: #2c2c24ec;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        z-index: 3;
+        transform: translatex(200px);
+        transition: all 0.9s ease-in-out;
+    }
+
+    .sec2 {
+        padding: 20px;
+        gap: 0px;
+
+    }
+/* 
+    .card img {
+        max-width: 100px;
+        max-height: 100px;
+
+    }
+
+    .card {
+        gap: 3px;
+        max-width: 150px;
+        max-height: 250px;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .card1 {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .card1 span {
+        font-size: 18px;
+    }*/
+
+    .card1 h2 {
+        color: #312121;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .card2 h2 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+/*
+    .card1 p {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .card span {
+        font-size: 12px;
+    }
+
+    .card p {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        padding-top: 5px;
+    }
+
+    .card h3 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .card button {
+        background-image: linear-gradient(to right, #314755 0%, #151516 51%, #a3b1bd 100%);
+        padding: 3px 2px;
+        border-radius: 3px;
+        margin-top: 7px;
+        font-size: 6px;
+    } */
+
+    .sec3 {
+        height: 60px;
+    }
+
+    .sec3 h1 {
+        font-size: 15px;
+    }
+
+    .sec3 img {
+        width: 50px;
+        height: auto;
+    }
+
+    .sec3 h1 span {
+        font-size: 8px;
+    }
+
+    footer {
+        height: 90px;
+        padding: 4px;
+    }
+
+    .social {
+        gap: 10px;
+        padding: 6px;
+    }
+
+    .social a i {
+        font-size: 15px;
+    }
+
+    .terms {
+        margin-top: 15px;
+    }
+
+    .terms a {
+        font-size: 8px;
+    }
+
+    footer p {
+        letter-spacing: 0px;
+        font-size: 6px;
+        left: 32%;
+    }
+
+    .payment {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .signin {
+        width: 80%;
+        left: 10%;
+        padding: 30px;
+        height: fit-content;
+    }
+
+    .facebook {
+        width: 40%;
+        height: 35px;
+    }
+
+    .facebook img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .facebook h3 {
+        font-size: 10px;
+    }
+
+    .google {
+        width: 40%;
+        height: 35px;
+    }
+
+    .google img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .google h3 {
+        font-size: 10px;
+    }
+
+    .login {
+       justify-content:flex-start;
+       gap: 0px 15px;
+    }
+    
+.signin button {
+    font-size: 8px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0px;
+}
+
+.signin p a {
+    font-size: 10px;
+}
+.signin p {
+    font-size: 10px;
+}
+
+#cancel {
+    font-size: 18px;
+}
+.gcus{
+    grid-template-areas: 
+    "aside aside aside"
+    "center center center"
+    "login login login";
+}
+.gcus1{
+    width: 80vw;
+}
+.gcus2{
+    width: 80vw;
+}
+.gcus3{
+    width: 80vw;
+
+
+}
+.gcus3 p{
+    font-size: 18px;
+    text-align: center;
+}
+.custodiv{
+    flex-direction: column;
+    overflow-x: scroll;
+}
+footer .plu{
+    font-size: 8px;
+    bottom: 5px;
+    margin-left: -10px;
+}
+}
